@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Book extends Model
 {
@@ -15,7 +17,7 @@ class Book extends Model
         'description',
         'author_id',
         'genre',
-        'published_date',
+        'published_at',
         'total_copies',
         'available_copies',
         'price',
